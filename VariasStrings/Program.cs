@@ -6,7 +6,8 @@ internal class Program
     {
         int x = 123;
         int y = -123;
-
+        double z = 0.44;
+        
         Console.WriteLine("Hello, World!");
         Console.WriteLine(@"\nHello, World!\n");
         Console.WriteLine("\u07F7\u08F2");
@@ -26,5 +27,14 @@ internal class Program
         Console.WriteLine(myStr);
         Console.WriteLine("Y é {1}, X é {0}", x , y);
 
+        Console.WriteLine("Valor é {0,-10:f3}!!", 1.3453453453);
+        
+        Console.WriteLine($"x em hex = {x:X}");
+        Console.WriteLine($"x em hex = {x:x}");
+
+        Console.WriteLine($"z = {z}");
+        Console.WriteLine($"z = {z:p}");
+        Console.WriteLine($"z = {z:c}");
+        
     }
 }
