@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Schema;
 
 internal class Program
 {
@@ -7,7 +8,9 @@ internal class Program
         int x = 123;
         int y = -123;
         double z = 0.44;
-        
+        double xx = 1.23456;
+        int ii = 19;
+
         Console.WriteLine("Hello, World!");
         Console.WriteLine(@"\nHello, World!\n");
         Console.WriteLine("\u07F7\u08F2");
@@ -35,6 +38,12 @@ internal class Program
         Console.WriteLine($"z = {z}");
         Console.WriteLine($"z = {z:p}");
         Console.WriteLine($"z = {z:c}");
+
+        Console.WriteLine("Valor é {0:f2}!!", 1.23456);
+        Console.WriteLine($"xx = {xx:p}");
+        
+        Console.WriteLine($"ii em hex = {ii:X}");
+        Console.WriteLine($"ii = {ii:c}");
         
     }
 }
