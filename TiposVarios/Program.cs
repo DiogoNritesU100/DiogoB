@@ -37,6 +37,11 @@ internal class Program
             Console.WriteLine(h);
             Console.WriteLine(i);
 
+            bool b1 = true;
+            bool b2 = f > g;
+
+            Console.WriteLine(b1);
+            Console.WriteLine(b2);
             
 
         }
